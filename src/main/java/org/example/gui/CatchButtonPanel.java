@@ -49,10 +49,14 @@ public class CatchButtonPanel extends JPanel {
     private void changeWeirdButtonPosition(){
         var btnSize = runningButton.getSize();
         this.runningButton.setBounds(
-                random.nextInt(this.getSize().width),
-                random.nextInt(this.getSize().height),
+                random.nextInt(randomIntInRange(50, this.getSize().width - btnSize.width)),
+                random.nextInt(randomIntInRange(50, this.getSize().height - btnSize.height)),
                 btnSize.width,
                 btnSize.height);
+    }
+
+    private int randomIntInRange(int min, int max){
+        return this.random.nextInt((max - min) + 1) + min;
     }
 
 
