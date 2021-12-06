@@ -16,6 +16,7 @@ public class DrawingCanvas extends JComponent{
         shapesToDrawColors = new ArrayList<>();
         this.setOpaque(true);
         this.setBackground(Color.lightGray);
+        this.setFocusable(true);
     }
 
     public void addNewShape(Shape shape, Color color){
