@@ -27,7 +27,7 @@ public class MainFrame extends JFrame {
         this.setVisible(true);
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setPreferredSize(new Dimension(500,600));
-        this.setMinimumSize(new Dimension(300,300));
+        this.setMinimumSize(new Dimension(500,500));
 
         this.setJMenuBar(this.menuBar);
     }
